@@ -1,0 +1,91 @@
+.filterSection {
+  .filterIcon {
+    font-size: 15px;
+    margin-right: 10px;
+    color: #505050;
+    margin-bottom: -2px;
+  }
+  .filterFields {
+    select {
+      text-transform: capitalize;
+    }
+  }
+}
+.tableTopSection {
+  border-bottom: 1px solid #cacaca;
+}
+.lobbyData {
+  .dataHead,
+  .userRow {
+    width: 100%;
+    display: flex;
+    & > * {
+      flex: 2;
+      &:nth-last-of-type(1),
+      &:nth-last-of-type(2) {
+        flex: 1;
+      }
+    }
+  }
+  .dataHead {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .dataBody {
+    .userRow {
+      background-color: #fff;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      .responsiveLabels {
+        display: none;
+      }
+      & > * {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        text-transform: capitalize;
+        &:first-child {
+          .userImg {
+            width: 60px;
+            height: 60px;
+            padding: 4px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            background-color: #4ec9fd;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            margin-right: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .lobbyData {
+    .dataHead {
+      display: none;
+    }
+    .dataBody {
+      .userRow {
+        flex-direction: column;
+        & > * {
+          padding: 10px 10px;
+          border-bottom: 1px solid #cacaca;
+          &:last-child {
+            border-bottom: 0;
+          }
+          .responsiveLabels {
+            display: table;
+            flex: 1;
+            justify-self: center;
+            font-weight: 600;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
