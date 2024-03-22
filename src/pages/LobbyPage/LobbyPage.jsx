@@ -71,7 +71,7 @@ const LobbyPage = () => {
         <Loading />
       ) : (
         <>
-          <Accordion defaultActiveKey='0' className='mt-3 filterSection'>
+          <Accordion className='mt-3 filterSection'>
             <Accordion.Item eventKey='0'>
               <Accordion.Header>
                 <FaFilter className='filterIcon' />

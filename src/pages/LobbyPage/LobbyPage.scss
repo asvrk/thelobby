@@ -1,4 +1,10 @@
 .filterSection {
+  .accordion-header {
+    button {
+      padding: 0 10px;
+      height: 40px;
+    }
+  }
   .filterIcon {
     font-size: 15px;
     margin-right: 10px;
